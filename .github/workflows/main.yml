@@ -38,8 +38,8 @@ jobs:
         draft: false
         prerelease: false
 
-    - name: cd target && ls && cd release && ls
-      run: cd target && ls && cd release && ls
+    - name: cd target && ls && cd release && ls && x86_64-pc-windows-gnu && ls
+      run: cd target && ls && cd release && ls && x86_64-pc-windows-gnu && ls
 
     - name: Upload Release Assets
       id: upload-release-assets
