@@ -32,6 +32,15 @@ jobs:
         draft: false
         prerelease: false
 
+    - name: ls
+      run: ls
+
+    - name: cd target
+      run: cd target
+
+    - name: ls
+      run: ls
+
     - name: Upload Release Assets
       id: upload-release-assets
       uses: actions/upload-release-asset@v1
