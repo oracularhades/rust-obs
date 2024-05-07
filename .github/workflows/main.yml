@@ -18,6 +18,9 @@ jobs:
       with:
         toolchain: stable
 
+    - name: Install cross-compilation toolchain
+      run: apt-get update -y && apt-get install -y mingw-w64
+
     - name: rustup target add x86_64-pc-windows-gnu
       run: rustup target add x86_64-pc-windows-gnu
     
