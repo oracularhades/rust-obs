@@ -49,7 +49,7 @@ jobs:
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: |
-          /target/x86_64-pc-windows-gnu/release/rust-obs.exe
+          ./target/x86_64-pc-windows-gnu/release/rust-obs.exe
         asset_name: |
           rust-obs.exe
         asset_content_type: application/octet-stream
